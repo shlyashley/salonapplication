@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="description" content="surveyform">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="Surveyformss.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title"> Paige Parlor Salon Hairstylist Application</h1>
+                <p id="desciption">Thank you for your interest in becoming a <strong>Hairstylist</strong> at <strong>Paige Parlor Salon.</strong> Please fill out the application and a staff member will get with you if you meet the qualifications.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required/> 
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required/>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                        <input type="number" name="age" id="number" min="16" max="99" class="form-control" placeholder="Enter Your Age"/>
+                </div>
+                <div class="form-group">
+                    <p>Which Position Are You Applying For?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select Your Preferred Role</option>
+                        <option value="apprentice">Shampoo Assistant</option>
+                        <option value="front-desk">Receptionist</option>
+                        <option value="colorist">Master Colorist</option>
+                        <option value="natural-stylist">Natural Hair Expert</option>
+                        <option value="barber">Barber</option>
+                        <option value="nailtech">Nail Technician</option>
+                        <option value="esthetician">Esthetician</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What Is Your Desired Availabilty?</p>
+                        <label>
+                            <input name="user-recommend" value="part-time" type="radio" class="input-radio" checked/>Part-Time
+                        </label>
+                        <label>
+                            <input name="user-recommend" value="full-time" type="radio" class="input-radio" checked/>Full-Time
+                        </label>
+                </div>
+                <div class="form-group">
+                    <p>Are You A Licensed Cosmetologist?</p>
+                        <label>
+                            <input name="user-license" value="yes" type="radio" class="input-radio" checked/>Yes
+                        </label>
+                        <label>
+                            <input name="user-license" value="no" type="radio" class="input-radio" checked/>No
+                        </label>
+                </div>
+                <div class="form-group">
+                    <p>What Are Your Current or Previous Salon Structure Experience?<span class="clue">(Check All That Apply)</span></p>
+                        <label>
+                            <input name="user-experience" value="booth-renter" type="checkbox" class="input-checkbox"/>Booth Renter
+                        </label>
+                        <label>
+                            <input name="user-experience" value="commissioner" type="checkbox" class="input-checkbox"/>Commission Salon
+                        </label>
+                        <label>
+                            <input name="user-experience" value="hourly-pay" type="checkbox" class="input-checkbox"/>Hourly/ Commission Salon <span class="clue">(Great Clips, Sport Clips, etc.)</span>
+                        </label>
+                </div>
+                <div class="form-group">
+                    <p>Please Copy & Paste Your Resume Here</p>
+                        <textarea name="resume" id="resume" class="input-textarea"></textarea>
+                </div>
+                <div class="form-group">
+                    <p>Why Should We Choose You To Become A Part Of The Team?</p>
+                        <textarea name="comment" id="comments" class="input-textarea" placeholder="Why are you awesome?" required>
+                        </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button"><strong><big>SUBMIT</big></strong>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+
+
+
+</html>
